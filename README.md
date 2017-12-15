@@ -65,9 +65,7 @@ Cheat sheet for CCNA4 - Scaling Networks
 
 ## Chapter5: Dynamic Routing
 
-| Description       | Command       |
-|:-----------------|:-------------|
-| Blabla            | `command`     |
+Enkel theorie
 
 ## Chapter6: EIGRP
 
