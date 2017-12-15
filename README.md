@@ -30,7 +30,19 @@ Cheat sheet for CCNA4 - Scaling Networks
 
 | Description       | Command       |
 |:-----------------|:-------------|
-| Blabla            | `command`     |
+| Verify Spanning Tree | `show spanning-tree` |
+| Verify Spanning Tree on VLAN | `show spanning-tree vlan`|
+| Enter the spanning-tree cost | `spanning-tree cost 25` |
+| Reset spanning-tree cost to default | `no spanning-tree cost` |
+| Ensure lowest bridge priority method 1| `spanning-tree VLAN 1 root primary`|
+| Ensure root bridge method 2| `spanning-tree VLAN 1 priority 24576`|
+| Ensure alternate root bridge method 1| `spanning-tree VLAN 1 root secondary`|
+| Configure portfast on switch port | `spanning-tree portfast`|
+| Configure BPDU guard on interface | `spanning-tree bpduguard enable`|
+| Configure Rapid PVST+ mode | `spanning-tree mode rapid-pvst`|
+| Specify point-to-point link type | `spanning-tree link-type point-to-point` |
+
+
 
 ## Chapter4: EtherChannel and HSRP
 
