@@ -20,8 +20,8 @@ Cheat sheet for CCNA4 - Scaling Networks
 | Assign name to VLAN | `name SALES` |
 | Verify configured VLANs | `show vlan brief` |
 | Set port to access mode | `switchport mode access` |
-| Set port to trunk mode | `switchport mode trunk` |
 | Assign the port to a VLAN | `switchport access vlan 30` |
+| Set port to trunk mode | `switchport mode trunk` |
 | Allow VLANs to trunk | `switchport trunk allowed vlan 10, 30` |
 | Assign subinterface to VLAN (routers) | `encapsulation dot1q 10` |
 | Assign default gateway | `ip default-gateway 10.1.1.1` |
