@@ -11,7 +11,20 @@ Cheat sheet for CCNA4 - Scaling Networks
 
 | Description       | Command       |
 |:-----------------:|:-------------:|
-| Blabla            | `command`     |
+| Verify VTP status | `show vtp status`     |
+| Set VTP mode client | `vtp mode client` |
+| Configure VTP domain name | `vtp domain CCNA` |
+| Set VTP password | `vtp password cisco12345` |
+| Create VLAN | `vlan 10` |
+| delete VLAN | `no vlan 10` |
+| Assign name to VLAN | `name SALES` |
+| Verify configured VLANs | `show vlan brief` |
+| Set port to access mode | `switchport mode access` |
+| Set port to trunk mode | `switchport mode trunk` |
+| Assign the port to a VLAN | `switchport access vlan 30` |
+| Allow VLANs to trunk | `switchport trunk allowed vlan 10, 30` |
+| Assign subinterface to VLAN (routers) | `encapsulation dot1q 10` |
+| Assign default gateway | `ip default-gateway 10.1.1.1` |
 
 ## Chapter3: STP
 
