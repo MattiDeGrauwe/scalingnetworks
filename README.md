@@ -48,7 +48,20 @@ Cheat sheet for CCNA4 - Scaling Networks
 
 | Description       | Command       |
 |:-----------------|:-------------|
-| Blabla            | `command`     |
+| Verify EtherChannel configuration | `show interfaces port-channel 1`|
+| Verify EtherChannel different channels | `show etherchannel summary`|
+| Verify role of the interface in Etherchannel | `show interfaces f0/1 etherchannel`|
+| Verify EtherChannel port channels | `show etherchannel port-channel`|
+| Select desired interface range | `interface range f0/1-2`|
+| Create port channel interface | `channel-group 1 mode active`|
+| Enter port channel interface | `interface port-channel 1`|
+| Verify HSRP configuration | `show standby brief`|
+| Configure HSRP to use version 2 | `standby version 2`|
+| Configure virtual IP that will be used by group | `standby 10 ip 192.168.1.1` |
+| Configure priorty that will be used for group | `standby 10 priority 100`|
+| Configure the router to preempt | `stadby 10 preempt`|
+| Debug HSRP | `debug standby packets`|
+| Debug HSRP | `debug standby terse`|
 
 ## Chapter5: Dynamic Routing
 
