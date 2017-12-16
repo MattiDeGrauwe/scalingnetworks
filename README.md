@@ -71,7 +71,30 @@ Enkel theorie
 
 | Description       | Command       |
 |:-----------------|:-------------|
-| Blabla            | `command`     |
+| Enable router configuration mode to eigrp and begin configuration process | `router eigrp 1` |
+| Disable router configuration mode from eigrp| `no router eigrp 1`|
+| Set router-id | `eigrp router-id 1.1.1.1` |
+| Enable eigrp for the interfaces on a specific subnet| `network 172.16.0.0` |
+| Enable eigrp for the interfaces on a specific subnet, but only allow allow some| `network 192.168.10.8 0.0.0.3` |
+| Set interface to passive | `passive-interface g0/0` |
+| Examine neighbors | `show ip eigrp neighbors` |
+| Verifying eigrp active | `show ip protocols` |
+| Examine routing table | `show ip route`|
+| Adjust metric weight (waarschijnlijk niet nodig) | `metric weights tos k1 k2 k3 k4 k5` |
+| Adjust bandwidth | `interface s0/0/0 && bandwidth 64` |
+| Configure Link-local adress | `ipv6 address fe80::1 link-local` |
+| Enable router configuration mode for ivp6 | `ipv6 router eigrp 2` |
+| Configure unicast-routing | `ipv6 unicast-routing` |
+| Configure router-id | `eigrp router-id 1.0.0.0 && no shutdown` |
+| Enable eigrp on an interface | `ipv6 eigrp 2` |
+| Examine ipv6 eigrp neighbors | `show ipv6 eigrp neighbors` |
+| Verify ipv6 eigrp active | `show ipv6 protocols` |
+| Verify ipv6 routes active | `show ipv6 route` |
+| Enable auto-summary | `auto-summary` |
+| Propagate (ipv6) static route | `redestribute static` |
+| Configure hello timers | `ip hello-interval eigrp 1 50|
+| Configure hold timers | `ip hold-time eigrp 1 150` |
+| Set interface to passive | `passive interface s0/0/0` |
 
 ## Chapter7: EIGRP Tuning and Troubleshooting
 
