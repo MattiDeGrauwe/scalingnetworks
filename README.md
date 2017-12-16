@@ -100,22 +100,33 @@ Enkel theorie
 
 | Description       | Command       |
 |:-----------------|:-------------|
-| Blabla            | `command`     |
+| Zit hierboven vanaf propagate | `command`     |
 
 ## Chapter8: Single-Area OSPF
 
 | Description       | Command       |
 |:-----------------|:-------------|
-| Blabla            | `command`     |
+| Enable configuration mode to ospf and begin configuration process | `router ospf 10` |
+| Disable router configuration mode from ospf| `no router ospf 10` |
+| Set router-id | `router-id 1.1.1.1` |
+| Lookback interface as router ID | `interface loopback 0 && ip address 1.1.1.1 255.255.255.255` |
+| Assigning interfaces to an ospf area | `network 172.16.1.0 0.0.0.255 area 0` |
+| Configure passive interfaces | `passive-interface g0/0` |
+| Adjust interface bandwidth | `bandwidth 64` |
+| Manually set cost | `ip ospf cost 15625` |
+| Verify ospf neighbors | `show ip ospf neighbor` |
+| Verify ospf settings | `show ip protocols` |
+| Verify interface settings | `show ip ospf interface brief` |
 
 ## Chapter9: Multiarea OSPF
 
 | Description       | Command       |
 |:-----------------|:-------------|
-| Blabla            | `command`     |
+| Multiarea ospf | `network 10.1.1.1 0.0.0.0 area 1 && network 192.168.10.1 0.0.0.0 area 0`     |
 
 ## Chapter10: OSPF Tuning and Troubleshooting
 
 | Description       | Command       |
 |:-----------------|:-------------|
-| Blabla            | `command`     |
+| Propogate a Default Static route            | `default-information originate`     |
+| Hello/Hold interval | `Zie eigrp` |
