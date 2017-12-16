@@ -92,7 +92,7 @@ Enkel theorie
 | Verify ipv6 routes active | `show ipv6 route` |
 | Enable auto-summary | `auto-summary` |
 | Propagate (ipv6) static route | `redestribute static` |
-| Configure hello timers | `ip hello-interval eigrp 1 50|
+| Configure hello timers | `ip hello-interval eigrp 1 50` |
 | Configure hold timers | `ip hold-time eigrp 1 150` |
 | Set interface to passive | `passive interface s0/0/0` |
 
