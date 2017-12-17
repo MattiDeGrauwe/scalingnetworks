@@ -5,7 +5,23 @@ Cheat sheet for CCNA4 - Scaling Networks
 
 | Description       | Command       |
 |:-----------------|:-------------|
-| Blabla            | `command`     |
+| Set the console (interface 0) time out to 5 minutes          | `exec-timeout 5 0`     |
+| Configure the router to encrypt all plain text passwords | `service password-encryption` |
+| Configure an IP address and a subnet mask to an interface |`ip address 192.168.1.2 255.255.255.252`|
+| Enable an interface on a switch |`no shutdown`|
+| Configure RIP routing protocol |`router rip`|
+| Configure RIPv2 |`version 2`|
+| Advertise the 192.168.1.0 network |`network 192.168.1.0`|
+| Disabe auto summarization |`no auto-summary`|
+| Show the current running configuration of the device |`show running-config` |
+| Show information about the configured IPv4 protocols on the router |`show ip protocols`|
+| Show routing table |`show ip route`|
+| Display a brief summary of the current information for every configured interface |`show ip interface brief`|
+| Display information about directly connected Cisco devices |`show cdp neighbors`|
+| Displays any ports with security activated |`show port-security`|
+| Displays all secure MAC addresses configured on all switch interfaces|`show port-security address`|
+| Displays all MAC addresses |`show mac-address-table`|
+
 
 ## Chapter2: Scaling VLANs
 
