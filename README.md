@@ -130,6 +130,7 @@ Enkel theorie
 | Configure passive interfaces | `passive-interface g0/0` |
 | Adjust interface bandwidth | `bandwidth 64` |
 | Manually set cost | `ip ospf cost 15625` |
+| Set interface priority | `ip ospf priority 150` |
 | Verify ospf neighbors | `show ip ospf neighbor` |
 | Verify ospf settings | `show ip protocols` |
 | Verify interface settings | `show ip ospf interface brief` |
